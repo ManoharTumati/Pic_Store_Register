@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+         body{
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+        }
+    .navbar{
+        border: 2px solid black;
+        text-decoration: none;
+         text-align: center;
+         background-color: rgba(255, 255, 255, 0.95);
+            position: sticky;
+            background-color: rgb(223, 234, 238);
+            
+            box-shadow: 2px 4px 6px black;
+            border-radius: 25px;
+            padding: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
+
+    }
+    .navbar a 
+        {
+            margin-right: 35px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+
+        }
+  .login_box{
+    border: 4px solid rgb(90, 90, 111);
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    margin-left: 35%;
+    margin-top: 90px;
+    font-size: 1.4rem;
+    box-shadow: 3px 5px 5px gray;
+  }
+
+  .login_box #uname,#pwd{
+    border:40px ;
+    box-shadow: -2px 4px 6px black;
+    border-color: black;
+    outline: none;    
+    font-size: 1rem;
+    padding: 15px;
+    width: 400px;
+    position: relative;
+
+  }
+  .login_box #uname{
+    margin-left: 40px;
+    border-radius: 15px;
+  }
+  .login_box #pwd{
+    margin-left: 10px;
+        border-radius: 15px;
+
+  }
+  form a{
+    text-decoration: none;
+    
+  }
+
+        button{
+    border: 1px solid black;
+    width: 120px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 250px;
+    margin-bottom: 10px;
+    background-color: rgb(29, 233, 172);
+    cursor: pointer;
+    font-size: 20px;
+  }
+  button:hover{
+    background-color: rgb(60, 3, 114);
+    color: azure;
+
+    
+  }
+
+ 
+
+    </style>
+</head>
+<body>
+<h1>✨Welcome to PicStore <i class="fa-solid fa-store"></i></h1>
+    <nav class="navbar">
+        <a href=""><i class="fa-regular fa-house"></i>  Home</a>
+        <a href=""><i class="fa-solid fa-circle-info"></i>  About</a>
+        <a href=""><i class="fa-solid fa-user-tag"></i>  Contact Us</a>
+    </nav>
+    <div class="login_box">
+        <form action="home.html">
+            <p><label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your full name"  required id="uname">
+            </p>
+            <p><label for="pass">Password</label>
+            <input type="password" placeholder="set your password" required id="pwd">
+            </p>
+            <button type="submit">Register</button> 
+            <br>Don't have an account? <a href="index.html">Sign Up here</a>
+        </form>
+    </div>
+    
+</body>
+</html>
