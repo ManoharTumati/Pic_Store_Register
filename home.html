@@ -10,7 +10,7 @@
          body{
             margin: 0px;
         }
-        h1{
+        #title{
             text-align: center;
             font-size: 35px;
         }
@@ -40,16 +40,20 @@
         }
 
         .parent{
-            display: grid;
-            grid-template-columns: 600px 600px 600px;
-            grid-template-rows: 500px 500px;
+            display: flex;
+            
+           
+        }
+        img{
+            width: 400px;
+            height: 400px;
         }
 
     </style>
 
 </head>
 <body>
-    <h1>✨Welcome to PicStore <i class="fa-solid fa-store"></i></h1>
+    <h1 id="title">✨Welcome to PicStore <i class="fa-solid fa-store"></i></h1>
     <nav class="navbar">
         <a href=""><i class="fa-regular fa-house"></i>  Home</a>
         <a href=""><i class="fa-solid fa-circle-info"></i>  About</a>
@@ -58,23 +62,23 @@
     </nav>
 
 <div class="parent">
-    <div>Upload your favorite Photos
-        <img src="" alt="">
+    <div><h1>Upload your favorite Photos</h1> <br>
+        <img src="image1.jpeg" alt="">
     </div>
-    <div>Share with your loved ones
-        <img src="" alt="">
+    <div><h1>Share with your loved ones</h1><br>
+        <img src="image2.jpg" alt="">
     </div>
-    <div>Edit your pictures
-        <img src="" alt="">
+    <div><h1>Edit your pictures</h1><br>
+        <img src="Image3.jpg" alt="">
     </div>
-    <div>Download wonders
-        <img src="" alt="">
+    <div><h1>Download wonders</h1><br>
+        <img src="image6.webp" alt="">
     </div>
-    <div>Explore others memories
-        <img src="" alt="">
+    <div><h1>Explore others memories</h1><br>
+        <img src="image5.webp" alt="">
     </div>
-    <div>Invite your friends 
-        <img src="" alt="">
+    <div><h1>Invite your friends</h1><br> 
+        <img src="image4.jpg" alt="">
     </div>
     
 </div>
