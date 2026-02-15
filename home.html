@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <style>
 
          body{
             margin: 0px;
@@ -18,16 +24,16 @@
     .navbar{
         border: 2px solid black;
         text-decoration: none;
-         text-align: center;
-         background-color: rgba(255, 255, 255, 0.95);
-            position: sticky;
-            background-color: rgb(223, 234, 238);
-            
-            box-shadow: 2px 4px 6px black;
-            border-radius: 25px;
-            padding: 25px;
-            margin-left: 5px;
-            margin-right: 5px;
+        text-align: center;
+        
+        background-color: rgba(255, 255, 255, 0.95);
+        position: sticky;
+        background-color: rgb(223, 234, 238);    
+        box-shadow: 2px 4px 26px black;
+        border-radius: 25px;
+        padding: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
 
     }
     .navbar a 
@@ -40,63 +46,89 @@
 
         }
         .parent{
-            display: flex;
+            display: grid;
+            grid-template-rows: repeat(2, 730px);
+            grid-template-columns: repeat(3, 530px );
             margin: 25px;
-            position: relative;
-            
+            margin-bottom: 70px;
+            margin-left: 90px;
+            grid-gap: 40px 70px;
         }
         .card-item{
             box-shadow: 2px 4px 7px rgba(0,0,0,0.8);
-            width: 600px;
+             transition-duration: 0.5s;
+            transition-delay: 0.07s;
             background-color: aliceblue;
             border-radius: 20px;
-            padding: 20px;
+            padding: 30px;
+            
             margin-top: 25px;
             margin-right: 25px;
             position: relative;
         }
-        img{
-            width: 550px;
-            height: 550px;
+        .card-item:hover
+        {
+            box-shadow: 3px 5px 30px black;
+            
         }
-
-    </style>
-
-</head>
-<body>
-    <h1 id="title">✨Welcome to PicStore <i class="fa-solid fa-store"></i></h1>
-    <nav class="navbar">
-        <a href=""><i class="fa-regular fa-house"></i>  Home</a>
-        <a href=""><i class="fa-solid fa-circle-info"></i>  About</a>
-        <a href=""><i class="fa-solid fa-user-tag"></i>  Contact Us</a>
-        <a href="login.html">Logout</a>
-    </nav>
-
-
-    <div class="parent">
-    <div class="card-item"><h1>Upload your favorite Photos</h1> <br>
-        <img src="image1.jpeg" alt="">
-    </div>
-    <div class="card-item"><h1>Share with your loved ones</h1><br>
-        <img src="image2.jpg" alt="">
-    </div>
-    <div class="card-item"><h1>Edit your pictures</h1><br>
-        <img src="Image3.jpg" alt="">
-    </div>
-    </div>
-
-    <div class="parent">
-    <div class="card-item"><h1>Download wonders</h1><br>
-        <img src="image6.webp" alt="">
-    </div>
-    <div class="card-item"><h1>Explore others memories</h1><br>
-        <img src="image5.webp" alt="">
-    </div>
-    <div class="card-item"><h1>Invite your friends</h1><br> 
-        <img src="image4.jpg" alt="">
-    </div>
-    </div>
-    
-
-</body>
+        img{
+            width: 450px;
+            height: 550px;
+            
+        }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">
+            ✨Welcome to PicStore
+            <i class="fa-solid fa-store"></i>
+        </h1>
+        <nav class="navbar">
+            <a href="">
+                <i class="fa-regular fa-house"></i>
+                Home
+            </a>
+            <a href="">
+                <i class="fa-solid fa-circle-info"></i>
+                About
+            </a>
+            <a href="">
+                <i class="fa-solid fa-user-tag"></i>
+                Contact Us
+            </a>
+            <a href="login.html">Logout</a>
+        </nav>
+        <div class="parent">
+            <div class="card-item">
+                <h1>Upload your favourite Photos</h1>
+                <br>
+                <img src="image1.jpeg" alt="">
+            </div>
+            <div class="card-item">
+                <h1>Share with your loved ones</h1>
+                <br>
+                <img src="image2.jpg" alt="">
+            </div>
+            <div class="card-item">
+                <h1>Edit your pictures</h1>
+                <br>
+                <img src="Image3.jpg" alt="">
+            </div>
+            <div class="card-item">
+                <h1>Download wonders</h1>
+                <br>
+                <img src="image6.webp" alt="">
+            </div>
+            <div class="card-item">
+                <h1>Explore others memories</h1>
+                <br>
+                <img src="image5.webp" alt="">
+            </div>
+            <div class="card-item">
+                <h1>Invite your friends</h1>
+                <br>
+                <img src="image4.jpg" alt="">
+            </div>
+        </div>
+    </body>
 </html>
